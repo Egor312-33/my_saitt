@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+}
+header{
+    position: fixed;
+    z-index: 10; /*  Увеличиваем значение z-index  */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #d7abf0;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+
+
+}
+header .logo{
+    width: 50px; /* Ширина логотипа */
+    height: 50px; /* Высота логотипа */
+    transition: .5s;
+}
+header .logo:hover {
+    transform: scale(1.2);
+}
+
+header  nav ul li { 
+    position: relative;
+    float: left;
+
+}
+header nav ul li a{
+    padding: 24px;
+    color: #000;
+    font-size: 20px;
+    display: block;
+
+}
+header nav ul  li a:hover {
+    background: #0c000f;
+    color: #fff;
+} 
+
+ header ul li ul {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    background-color: #d7abf0;
+
+
+ }
+ nav ul li ul li{
+    width: 100%;
+    border: 1px solid rgba(0,0,0, .0);
+ }
+ nav ul li ul li ul {
+    left: 180px;
+    top: 0;
+ }
+ .disp{
+    display: none;  
+}
+.poisk{
+    position: absolute;
+    left: 100px;
+    bottom: 25px;
+
+}
+.search_button {
+    padding: 10px 20px;
+    background-color: #3f5061;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .wrapper {
+    margin: -650px auto;
+    width:390px;
+    height: 560px;
+    background: transparent;
+    border: 3px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: #fff;
+    border-radius: 25px;
+    padding: 30px 70px;
+    z-index: 1;  /*  Уменьшаем значение z-index  */
+    background: url(../images/4743719.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.wrapper h1{
+    font-size: 27px;
+    text-align: center;
+    color: rgb(194, 92, 8);
+}
+.wrapper .input-box{
+    width: 90%;
+    height: 40px;
+    margin: 20px 50px;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 50%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255,255,255, .2);
+    border-radius: 20px;
+    font-size: 16px;
+    padding:  20px 45px 15px 20px;
+}
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box a{
+    color: #17100b; /* Измените цвет на белый */
+    left: -110px;
+    top: 9px;
+    font-size: 17px;
+    position: absolute;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Добавьте тень для улучшения читаемости */
+
+
+    
+}
+.wrapper .remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    flex-wrap: wrap; 
+    margin: 0px 20px 5px ;
+}
+.remember label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember a:hover {
+    text-decoration: underline;
+}
+.wrapper .bin{
+    margin: 0px 20px;
+    width: 90%;
+    height: 45px;
+    background: #2c0f2c;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(0. 0. 0. .1);
+    cursor:  pointer;
+    font-size: 16px;
+    color: #ff8504;
+    font-weight: 600;
+}
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.napravl {
+  margin-top: 70px;
+    width: 150px; /* Ширина левой панели */
+    background-color: #d7abf0;
+    padding: 2px; /* Отступ внутри панели */
+    border: 3px solid rgba(48, 11, 39, 0.2);
+    flex-direction: column; /* Выравнивание по вертикали */
+    height: auto;
+    font-size: 20px;
+  
+  }
+  .item h3 {
+    margin-top: 20px; /*  Измените значение на нужное  */
+  }
+ .item {
+      margin-bottom: 20px;
+      position: relative;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+  
+  .item p, h3{
+    overflow: hidden;
+      text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+    .item .full-text {
+      display: none;
+      position: absolute;
+      right: -180px;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      background-color: #d7abf0;
+      max-width: 200px; /* Задайте максимальную ширину */
+    }
+
+    .item:hover .full-text {
+      display: block;
+    }
+  .modal {
+
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+  }
+
+  .modal_box{
+    position: relative;
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    margin: 30px 15px;
+    background-color: white;
+    box-shadow: 0px 0px 17px -7px rgba(34,60,80, 0.2);
+    transform: scale(0);
+    transition: transform .8s;
+  }
+  .modal.open{
+    visibility: visible;
+    opacity: 1;
+  }
+  .modal.open .modal_box{
+    transform: scale(1);
+  }
+  
+
+
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.modal__close-btn svg path {
+  transition: fill .4s;
+}
+
+.modal__close-btn:hover svg path {
+  fill: blue;
+}
+
+.modal__close-btn:active svg path {
+  fill: rgb(186, 53, 0);
+}

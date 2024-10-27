@@ -1,0 +1,219 @@
+
+
+.panel {
+  display: flex; /* Размещаем элементы в одну строку */
+  gap: 0px; /* Отступ между элементами */
+  justify-content: center; /* Выравниваем по центру по горизонтали */
+  background-color: rgba(48, 11, 39, 0.2); /* Цвет полосы с прозрачностью */
+  padding: 10px 0; /* Добавляем отступ сверху и снизу */
+
+ font-size: 25px;
+ 
+}
+
+.disp {
+  display: none;
+}
+
+.panel a {
+  color: rgb(84, 23, 107); /* Белый цвет текста для элементов */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+.napravl {
+
+  width: 220px; /* Ширина левой панели */
+  background-color: #d7abf0;
+  padding: 2px; /* Отступ внутри панели */
+  border: 3px solid rgba(48, 11, 39, 0.2);
+  flex-direction: column; /* Выравнивание по вертикали */
+  height: auto;
+  font-size: 20px;
+
+}
+
+.napravl h1 {
+  margin-top: 0px;
+  color: #55104b; /* Цвет текста заголовка */
+  font-size: 1.2em; /* Размер шрифта заголовка */
+  margin-bottom: 12px; /* Отступ снизу заголовка */
+
+}
+
+.napravl ul {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем отступ списка */
+
+}
+
+.napravl li {
+  margin-bottom: 15px; /* Отступ снизу элементов списка */
+  overflow: hidden;
+  text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+.napravl a {
+  color: #332d33; /* Цвет текста ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+
+}
+
+.ravn2{
+  flex-direction: column; /* Выравнивание по вертикали */
+}
+.ravn {
+  display: flex; /* Используем flexbox для контейнера */
+}
+
+
+.content1 {
+  margin-left: 20px; /* Отступ от левого элемента */
+}
+.news {
+  flex-grow: 1; 
+  width: 50%; 
+}
+.news2 {
+  margin-top: 100px;
+  display: flex;
+}
+
+.text_container{
+  margin-left: 10px;
+}
+
+.obvod {
+  border: 3px solid rgba(48, 11, 39, 0.2);
+}
+.survey{
+  background-color: #e7bce1; /* Цвет фона */
+  border: 3px solid rgba(48, 11, 39, 0.2);
+}
+
+.share-container {
+  display: flex;
+  align-items: center; /* Выравнивание по вертикали */
+  justify-content: space-between; /* Распределение пространства между элементами */
+}
+
+.share-text {
+  text-align: center; /* Выравнивание текста по центру */
+  font-size: 20px;
+
+}
+
+.social-buttons {
+  display: flex; /* Используем flexbox для кнопок */
+  list-style: none; /* Убираем маркеры */
+  margin: 0; /* Убираем отступы */
+  padding: 0; /* Убираем отступы */
+}  
+
+
+.social-buttons li {
+  margin-left: 10px; /* Отступ слева от каждой кнопки */
+  position: relative; /* Для позиционирования надписей */
+  padding: 10px; /* Отступы внутри кнопки */
+  border: 1px solid #ccc; /* Граница кнопки */
+  border-radius: 5px; /* Скругленные углы */
+}
+
+.social-buttons li span {
+  display: block; /* Делаем надпись блочным элементом */
+  text-align: center; /* Выравниваем текст по центру */
+  position: absolute; /* Позиционируем надпись относительно кнопки */
+  bottom: 100%; /* Надпись под кнопкой */
+  left: 50%; /* Горизонтальное центрирование */
+  transform: translateX(-50%); /* Точная центровка */
+  font-size: 12px; /* Размер шрифта */
+}
+.comment_box {
+  border: 1px solid #ccc; /* Граница комментария */
+  padding: 10px; /* Отступ внутри комментария */
+  margin-bottom: 15px; /* Отступ снизу */
+  border-radius: 5px; /* Скругленные углы */
+  margin-right: 100px;
+  background-color: #fddcdc;
+}
+
+.comment_box > p:first-child { /* Стиль для имени комментатора */
+  font-weight: bold; /* Жирный шрифт */
+  margin-bottom: 5px; /* Отступ снизу */
+}
+
+.comment_box > a:last-child { /* Стиль для текста комментария */
+  margin-top: 5px; /* Отступ сверху */
+  flex-grow: 1; /* Текст занимает остаток доступного пространства */
+}
+
+.comment_box button { /* Стиль для кнопки "Пожаловаться" */
+  background-color: #f0f0f0; /* Цвет фона кнопки */
+  border: none; /* Убираем стандартную границу */
+  padding: 5px 10px; /* Отступ внутри кнопки */
+  border-radius: 3px; /* Скругленные углы кнопки */
+  cursor: pointer; /* Указываем, что кнопка кликабельна */
+  position: absolute;
+  right: 100px;
+}
+.comment-header {
+  display: flex; /* Используем flexbox для выравнивания */
+  align-items: center; /* Выравнивание по вертикали */
+  margin-bottom: 12;
+}
+.news3 {
+  margin-top: 100px;
+}
+
+.news3 h1 {
+  text-align: center; /* Выравнивание заголовка по центру */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.directions-list {
+  display: flex; /* Используем flexbox для выравнивания */
+  flex-wrap: wrap; /* Разбиваем элементы на несколько строк */
+  justify-content: space-between; /* Распределение пространства */
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем отступы */
+}
+
+.directions-list li {
+  width: calc(50% - 10px); /* Ширина каждого элемента */
+  margin-bottom: 20px; /* Отступ снизу */
+  position: relative; /* Для позиционирования */
+}
+
+.directions-list li a {
+  display: block; /* Делаем ссылку блочным элементом */
+  text-decoration: none; /* Убираем подчеркивание */
+  color: black; /* Цвет текста */
+  padding: 10px; /* Отступ внутри ссылки */
+  border: 1px solid #ccc; /* Граница ссылки */
+  border-radius: 5px; /* Скругленные углы */
+  transition: all 0.3s ease; /* Анимация при наведении */
+}
+
+.directions-list li a:hover {
+  background-color: #eee; /* Цвет фона при наведении */
+  box-shadow: 0 0 5px #888; /* Тень при наведении */
+}
+
+
+.directions-list li img {
+  max-width: 100%; /* Максимальная ширина на 100% родителя */
+  max-height: 300px; /* Максимальная высота */
+  object-fit: cover; /* Покрытие всей области изображения */
+  border-radius: 5px 5px 0 0; /* Скругленные углы вверху */
+}
+
+.directions-list li h2 {
+  margin-top: 10px; /* Отступ сверху */
+  font-size: 1.2em; /* Размер шрифта */
+}
+
+.directions-list li p {
+  margin-top: 5px; /* Отступ сверху */
+  font-size: 0.9em; /* Размер шрифта */
+  line-height: 1.5; /* Межстрочный интервал */
+}

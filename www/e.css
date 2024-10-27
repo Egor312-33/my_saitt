@@ -1,0 +1,47 @@
+.news4 {
+    margin-top: 100px;
+  }
+  .news4 h1 {
+    text-align: center; /* Выравнивание заголовка по центру */
+    margin-bottom: 20px; /* Отступ снизу */
+  }
+  
+  .meets {
+    display: flex; /* Используем flexbox для выравнивания */
+    flex-direction: column; /* Элементы в столбик */
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+  }
+  
+  .meets li {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Отступ снизу */
+    border: 1px solid black; /* Добавляем чёрную отводку */
+    border-radius: 5px; /* Скругляем углы отводки */
+    height: 320px;
+    width: 1000px;
+
+  }
+  
+  .meets li p:first-of-type { /* Первый абзац (имя) */
+    font-weight: bold; /* Жирный шрифт */
+    margin-bottom: 5px; /* Отступ снизу */
+  }
+  
+  .meets li h2 {
+    margin-top: 5px; /* Отступ сверху */
+    margin-bottom: 10px; /* Отступ снизу */
+    margin-left: 100px;
+  }
+  
+  .meets li button {
+    background-color: #f0f0f0; /* Цвет фона кнопки */
+    border: none; /* Убираем стандартную границу */
+    padding: 5px 10px; /* Отступ внутри кнопки */
+    border-radius: 3px; /* Скругленные углы кнопки */
+    cursor: pointer; /* Указываем, что кнопка кликабельна */
+  }
+  .meets li:hover {
+    background-color: #eee; /* Цвет фона при наведении */
+    box-shadow: 0 0 5px #888; /* Тень при наведении */
+  }
